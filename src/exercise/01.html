@@ -6,14 +6,24 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
+<html>
+  <body>
+    <div id="root"></div>
 
-<!-- These next instructions are to be written in JavaScript in the <script> tag -->
-<!-- 🐨 Create a div -->
-<!--   💰 document.createElement('div') -->
+    <script type="module">
+      // <!-- These next instructions are to be written in JavaScript in the <script> tag -->
+      // <!-- 🐨 Create a div -->
+      // <!--   💰 document.createElement('div') -->
+      const div = document.createElement('div')
 
-<!-- 🐨 Set the div's textContent to 'Hello World' and className to 'container' -->
-<!--   💰 div.textContent = '...' -->
+      // 🐨 Set the div's textContent to 'Hello World' and className to 'container'
+      // <!--   💰 div.textContent = '...' -->
+      div.textContent = 'Hello World'
 
-<!-- 🐨 Append the div to the root div using `append` -->
-<!--   💰 document.getElementById('root') -->
-<!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+      // <!-- 🐨 Append the div to the root div using `append` -->
+      // <!--   💰 document.getElementById('root') -->
+      // <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+      document.getElementById('root').append(div)
+    </script>
+  </body>
+</html>
